@@ -181,7 +181,6 @@ def guardarcomentarios():
 
 
 #-------------------------------------------------------MAIN-----------------------------------------------------------------------------
-if __name__ == '__main__':
-    puerto = int(os.environ.get('PORT', 4000))
-    main.run(host='0.0.0.0', port=puerto)
 
+if __name__ == "__main__":
+    main.run(threaded=True, host="0.0.0.0", port=5000, debug=True)
